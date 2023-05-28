@@ -1,0 +1,42 @@
+.alert {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 500px;
+  width: 90%;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+}
+
+.alert.show {
+  opacity: 1;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  color: #856404;
+}
+
+.alert strong {
+  font-weight: bold;
+}
+
+.btn-close {
+  padding: 0.5rem 0.5rem;
+  margin: 0 0 0 auto;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+

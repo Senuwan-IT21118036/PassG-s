@@ -1,0 +1,67 @@
+
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+p a {
+  color: #8F3A84;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+p i {
+  margin-left: 10px;
+  color: #8F3A84;
+}
+
+p i:hover {
+  color: #4a536e;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button i {
+  color: #8F3A84;
+}
+
+button i:hover {
+  color: red;
+}
+
+button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.fa-trash {
+  color: red;
+  font-size: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.fa-clone:hover {
+  transform: scale(1.2);
+}
+.fa-trash:hover {
+  transform: scale(1.2);
+}

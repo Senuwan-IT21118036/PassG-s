@@ -1,0 +1,143 @@
+* {
+  	box-sizing: border-box;
+  	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  	font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+body {
+  	background-image: url('https://media.discordapp.net/attachments/1069288876289556552/1095579871016669194/953232-PhotoRoom.png?width=906&height=509');
+        background-poistion:center;
+        background-size:cover;
+        position: relative;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+}
+.register {
+  	width: 400px;
+        background-image: url('https://media.discordapp.net/attachments/1069288876289556552/1095579871016669194/953232-PhotoRoom.png?width=906&height=509');
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+        background-size: cover;
+        background-poistion:center;
+        margin: 100px auto;
+        position: relative;
+}
+.register::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: rgba(0, 0, 0, 0.4);
+        z-index: -1; /* Put the pseudo element behind the content */
+}
+.register h1 {
+  	text-align: center;
+  	color: #fff;
+  	font-size: 24px;
+  	padding: 20px 0 20px 0;
+  	border-bottom: 1px solid #dee0e4;
+	text-shadow: 2px 2px 2px #000;
+}
+.register h3 {
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        padding: 20px 0 0 0;
+        border-bottom: 1px solid #dee0e4;
+        text-shadow: 2px 2px 2px #000;
+
+}
+.register img {
+	padding-top:20px;
+        padding-bottom:10px;
+        display: block;
+         /* Make the image a block-level element for center alignment */
+        margin : 0 auto;
+        padding-left: 30px;
+}
+.register form {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	padding-top: 20px;
+}
+/*.register form label {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50px;
+ 	height: 50px;
+  	background-color: #3274d6;
+  	color: #ffffff;
+} */
+.register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+	text-align: center;
+}
+.register form input[type="submit"] {
+  	width: 100%;
+  	padding: 15px;
+  	margin-top: 20px;
+  	background-color: #d11a1a;
+ 	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.register form input[type="submit"]:hover {
+	background-color: #a72020;
+  	transition: background-color 0.2s;
+}
+
+@media screen and (max-width: 1000px) {
+body {
+margin: 0;
+}
+.register {
+width: 100%;
+margin: 0;
+box-shadow: none;
+background: transparent;
+min-height:100vh;
+}
+
+.register::before {
+display: none;
+}
+
+.register {
+font-size: 20px;
+padding: 15px 0;
+border: none;
+}
+
+.register img {
+padding: 10px 0;
+}
+
+.register form {
+padding: 0 10px;
+}
+
+.register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+width: 100%;
+height: 40px;
+margin-bottom: 10px;
+}
+
+.register form input[type="submit"] {
+width: 100%;
+height: 50px;
+margin-top: 15px;
+font-size: 18px;
+font-weight: bold;
+}
+}
